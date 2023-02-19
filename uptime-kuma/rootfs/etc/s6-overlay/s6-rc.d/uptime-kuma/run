@@ -5,6 +5,7 @@
 # Starts Uptime Kuma
 # ==============================================================================
 export NODE_PATH=/opt/node_modules
+echo "nameserver 1.1.1.1" > /etc/resolv.conf
 
 cd /opt/uptime-kuma || bashio::exit.nok "Could not change directory to Uptime Kuma"
 
